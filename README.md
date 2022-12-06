@@ -4,6 +4,8 @@ Why carry your own groceries when a robot can do it for you. Using a turtlebot2,
 
 This code has been tested on a turtlebot2 running ROS Kinetic.
 
+View out full website [here](https://sites.google.com/view/ros-shopping-bot/home)
+
 ## Installation Instructions
 These instructions should be followed in order. However, some of the steps can be skipped if the iOS app will not be used. These instructions have been indicated below.
 
