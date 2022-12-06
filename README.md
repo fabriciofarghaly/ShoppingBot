@@ -10,18 +10,18 @@ The sections below should be followed in order.
 ## Starting the WebServer
 * This web server is necessary for the ShoppingBot to talk to the iOS App.
 * This has only been tested running on a different computer, remote to the ShoppingBot, but it should also work running on the ShoppingBot's laptop. 
-* To start the web server follow the usage instructions in the [/WebServer/README.md](WebServer/README.md)
+* To start the web server follow the usage instructions in the [/WebServer/README.md](WebServer/README.MD)
 
 ## Starting the ItemScanner
 * This program uses the auxiliary camera on the ShoppingBot to scan ARuCo Tags and send information to the WebServer.
 * It is possible on different operating systems that this code will not use the correct camera by default. This is because of how different operating systems enumerate the capture devices connected to them and present them to openCV.
     * If this is the case a good place to start troubleshooting this is by changing line 25 of `item_scanner.py` from `self.feed = cv2.VideoCapture(0)` to `self.feed = cv2.VideoCapture(1)`.
-* To start the ItemScanner, follow the usage instructions in [/Scanner/README.md](Scanner/README.md)
+* To start the ItemScanner, follow the usage instructions in [/Scanner/README.md](Scanner/README.MD)
 
 ## ShoppingBot iOS App
 * Using this part requires a Mac running Xcode
     * Xcode can be installed from [this link](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
-* To configure and run the app follow the usage instructions in the [/ShoppingBot/README.md](ShoppingBot/README.md)
+* To configure and run the app follow the usage instructions in the [/ShoppingBot/README.md](ShoppingBot/README.MD)
 
 ## Turtlebot Bringup and running robust_people_follower
 * On either the laptop on the turtlebot, a laptop SSHed into the turtlebot, or a laptop connected to the turtlebot through ROS's networking configuration:
