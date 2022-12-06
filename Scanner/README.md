@@ -1,6 +1,6 @@
 # ARuCo Tag Scanning Module
 
-This module scanns ARuCo tags from the auxiliary camera mounted on the ShoppingBot and sends messages to the [WebServer](../WebServer/README.md) to update the budget stored by that server.
+This module scanns ARuCo tags from the auxiliary camera mounted on the ShoppingBot and sends messages to the [WebServer](../WebServer/README.MD) to update the budget stored by that server.
 
 Whenever a tag is recognized, there is a 3 second delay wherein no other tags will be scanned this is to ensure that items are not scanned multiple times per second and the budget stays correct. This delay can be changed in the constructor call on line 10: `_is = ItemScanner("10.20.94.117", remote_port="8080")` -> `_is = ItemScanner("10.20.94.117", remote_port="8080", scan_delay=<new_scan_delay>)`.
 
