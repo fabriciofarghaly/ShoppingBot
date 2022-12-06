@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ShoppingBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTs-dz-Sid">
+                                <rect key="frame" x="20" y="48" width="124" height="35"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Clear Budget"/>
+                                <connections>
+                                    <action selector="clearBudgetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aoc-AY-iV5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVO-gL-DJr">
+                                <rect key="frame" x="251" y="47" width="143" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Change Budget"/>
+                                <connections>
+                                    <action selector="changeBudgetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5eS-fl-EAa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining Budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmG-U5-gVK">
+                                <rect key="frame" x="137.5" y="104" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$75.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0y-Re-Oqs">
+                                <rect key="frame" x="112" y="150" width="190" height="77"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$120.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ply-6C-z60">
+                                <rect key="frame" x="112" y="287" width="190" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="out of" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjE-hk-x0R">
+                                <rect key="frame" x="185" y="247" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VP-rh-r2j">
+                                <rect key="frame" x="127" y="807" width="160" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Remove Last Item"/>
+                                <connections>
+                                    <action selector="removeLastItemPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQ6-7e-NIz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J0y-Re-Oqs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="10H-rF-YFB"/>
+                            <constraint firstItem="hjE-hk-x0R" firstAttribute="top" secondItem="J0y-Re-Oqs" secondAttribute="bottom" constant="20" id="4eh-pC-MKN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aVO-gL-DJr" secondAttribute="trailing" constant="20" id="5OQ-BJ-SMB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3VP-rh-r2j" secondAttribute="bottom" constant="20" id="HA7-B0-Mhk"/>
+                            <constraint firstItem="RmG-U5-gVK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="Rg0-cq-6tB"/>
+                            <constraint firstItem="3VP-rh-r2j" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SL0-kv-CJz"/>
+                            <constraint firstItem="RmG-U5-gVK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VnK-qe-bBF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="aVO-gL-DJr" secondAttribute="top" constant="1" id="W9N-kK-RTz"/>
+                            <constraint firstItem="ply-6C-z60" firstAttribute="top" secondItem="hjE-hk-x0R" secondAttribute="bottom" constant="19" id="ceL-o4-i1m"/>
+                            <constraint firstItem="J0y-Re-Oqs" firstAttribute="top" secondItem="RmG-U5-gVK" secondAttribute="bottom" constant="25" id="dGA-Ku-5eL"/>
+                            <constraint firstItem="hjE-hk-x0R" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jAI-be-TQW"/>
+                            <constraint firstItem="OTs-dz-Sid" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kmx-OO-Vhw"/>
+                            <constraint firstItem="ply-6C-z60" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kzQ-Qa-6bh"/>
+                            <constraint firstItem="OTs-dz-Sid" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vsC-vU-RjW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="budgetStatusLabel" destination="RmG-U5-gVK" id="YOC-zq-Dvy"/>
+                        <outlet property="remainingBudgetLabel" destination="J0y-Re-Oqs" id="5TB-sS-09n"/>
+                        <outlet property="totalBudgetLabel" destination="ply-6C-z60" id="kHr-d9-o7R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
