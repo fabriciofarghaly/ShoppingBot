@@ -6,9 +6,16 @@ This code has been tested on a turtlebot2 running ROS Kinetic.
 
 View out full website [here](https://sites.google.com/view/ros-shopping-bot/home)
 
-## Installation Instructions
+## Instructions
 These instructions should be followed in order. However, some of the steps can be skipped if the iOS app will not be used. These instructions have been indicated below.
 
+### Installing Python dependencies.
+* run `pip install -r requirements.txt`
+* Or, alternatively, you can install the packages manually through another package manager, the required packages are:
+  * numpy
+  * opencv-contrib-python
+  * requests
+  * flask
 
 ### Installing [robust_people_follower](https://github.com/sijanz/robust_people_follower)
 * Follow instructions described in this github's README.md
